@@ -221,6 +221,18 @@ h2.typo__h2#sub-props(data-section) Props
           td.table__td
             | String to show when pointing to an already selected option
         tr.table__tr
+          td.table__td: strong optionEmpty
+          td.table__td String
+          td.table__td: kbd 'List is empty.'
+          td.table__td
+            | String show, when list empty
+        tr.table__tr
+          td.table__td: strong emptyResponse
+          td.table__td String
+          td.table__td: kbd 'No elements found. Consider changing the search query.'
+          td.table__td
+            | String show, when response emptyy
+        tr.table__tr
           td.table__td: strong showLabels
           td.table__td Boolean
           td.table__td: kbd true

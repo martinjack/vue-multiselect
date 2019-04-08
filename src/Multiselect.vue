@@ -127,12 +127,12 @@
             </template>
             <li v-show="showNoResults && (filteredOptions.length === 0 && search && !loading)">
               <span class="multiselect__option">
-                <slot name="noResult">No elements found. Consider changing the search query.</slot>
+                <slot name="noResult">{{ emptyResponse }}</slot>
               </span>
             </li>
             <li v-show="showNoOptions && (options.length === 0 && !search && !loading)">
               <span class="multiselect__option">
-                <slot name="noOptions">List is empty.</slot>
+                <slot name="noOptions">{{ optionEmpty }}</slot>
               </span>
             </li>
             <slot name="afterList"></slot>
@@ -203,6 +203,24 @@ export default {
     deselectGroupLabel: {
       type: String,
       default: 'Press enter to deselect group'
+    },
+    /**
+     * String show, when list empty
+     * @default 'List is empty.'
+     * @type {String}
+     */
+    optionEmpty: {
+      type: String,
+      default: 'List is empty.'
+    },
+    /**
+     * String show, when response empty
+     * @default 'No elements found. Consider changing the search query.'
+     * @type {String}
+     */
+    emptyResponse: {
+      type: String,
+      default: 'No elements found. Consider changing the search query.'
     },
     /**
      * Decide whether to show pointer labels

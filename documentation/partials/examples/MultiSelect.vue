@@ -10,8 +10,7 @@ div
     :preserve-search="true",
     placeholder="Pick some"
     label="name",
-    track-by="name",
-    :preselect-first="true"
+    track-by="name"
   )
     template(
       slot="selection"

@@ -531,7 +531,6 @@ export default {
         } else {
           this.$emit('input', option, this.id)
         }
-
         /* istanbul ignore else */
         if (this.clearOnSelect) this.search = ''
       }
