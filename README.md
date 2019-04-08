@@ -30,7 +30,7 @@ Probably the most complete *selecting* solution for Vue.js 2.0, without jQuery.
 ## Install & basic usage
 
 ```bash
-npm install vue-multiselect
+npm install jackmartin-vue-multiselect
 ```
 
 ```vue
