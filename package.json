@@ -1,6 +1,6 @@
 {
   "name": "jackmartin-vue-multiselect",
-  "version": "2.1.5",
+  "version": "2.1.5-fix",
   "private": false,
   "types": "index.d.ts",
   "scripts": {
